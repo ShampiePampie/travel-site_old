@@ -14,7 +14,6 @@ class RevealOnScroll{
     }
 
     createWaypoints(){
-        console.log(this + "=======================");
         var that = this;
         this.itemsToReveal.each(function(){
             var currentItem = this;
