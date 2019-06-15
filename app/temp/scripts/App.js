@@ -11267,6 +11267,7 @@ var StickyHeader = function () {
         this.lazyImages = (0, _jquery2.default)(".lazyload");
         this.siteHeader = (0, _jquery2.default)(".site-header");
         this.headerTriggerElement = (0, _jquery2.default)(".large-hero__title");
+        this.menuBtn = (0, _jquery2.default)(".btn--menu");
         this.createHeaderWaypoint();
         this.pageSections = (0, _jquery2.default)(".page-section");
         this.headerLinks = (0, _jquery2.default)(".primary-nav a");
@@ -11296,8 +11297,10 @@ var StickyHeader = function () {
                 handler: function handler(direction) {
                     if (direction == "down") {
                         that.siteHeader.addClass("site-header--dark");
+                        that.menuBtn.addClass("btn--orange");
                     } else {
                         that.siteHeader.removeClass("site-header--dark");
+                        that.menuBtn.removeClass("btn--orange");
                     }
                 }
             });
